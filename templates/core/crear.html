@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" 
+    rel="stylesheet" />
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../../static/assets/css/crear.css">
+
+    <title>Crear - Pinterest</title>
+</head>
+
+<body>
+
+    <!-- Encabezado del sitio -->
+    <header>
+        <nav>
+            <a href="https://mx.pinterest.com/">
+                <img id="pinterest-icon" src="/static/assets/img/icono.png" alt="Icono de Pinterest">
+            </a>
+
+            <!-- íconos izquierda -->
+            <div class="left-items">
+                <ul class="first-list">
+                    <li><a id="inicio" href="index.html">Inicio</a></li>
+                    <li><a id="explorar" href="#">Explorar</a></li>
+                    <li><a id="crear" href="crear.html">Crear</a></li>
+                </ul>
+
+            </div>
+            <!-- Barra de Búsqueda -->
+            <div class="search">
+                <div class="barra">
+                    <span id="lupa" class="material-symbols-outlined">search</span>
+                    <input type="text" placeholder="Buscar">
+                </div>
+            </div>
+            <!-- íconos derecha -->
+            <div class="right-items">
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="material-symbols-outlined">sms</span>
+                <span class="material-symbols-outlined">account_circle</span>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página "Crear" -->
+    <main class="contenido">
+        <h1>Crear un nuevo pin</h1>
+        <form id="crear-pin" action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Escribe el título" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" placeholder="Escribe una descripción" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="imagen">Subir imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Guardar Pin</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>

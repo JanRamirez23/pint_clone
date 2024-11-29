@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: box;
+}
+
+body{
+    background-color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+/* Comentario */
+header nav{
+    width: 98vw;
+    height: 80px;
+    font-size: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+#pinterest-icon{
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+}
+#pinterest-icon:hover{
+    background-color: #e9e9e9;
+    border-radius: 150px;
+}
+.first-list{
+    display: flex;
+
+}
+.first-list li{
+    list-style: none;
+    padding: 14px 12px;
+    
+}
+.first-list a{
+    text-decoration: none;
+    color: black;
+}
+#inicio{
+    background-color: black;
+    color: white;
+    padding: 12px 12px;
+    border-radius: 25px;
+}
+.search{
+    flex-grow: 1;
+    height: 48px;
+    background-color: #e9e9e9;
+    border-radius: 30px;
+}
+.search:hover{
+    background-color: #e1e1e1;
+}
+.search:focus-within{
+    border: 4px solid #7fc1ff;
+}
+.barra{
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+#lupa{
+    padding: 13px;
+    color: #767676;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.barra input{
+    border: none;
+    background-color: inherit;
+    padding: 0px 8px 0px 0px;
+    font-size: 16px;
+    flex-grow: 1;
+    outline: none;
+}
+.right-items span{
+    padding: 8px;
+    color: #767676;
+    font-size: 28px;
+}
+.right-items span:hover{
+    background-color: #e9e9e9;
+    border-radius: 150px;
+    cursor: pointer;
+}
+
+/* Main Content */
+main.contenido {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+main h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form#crear-pin {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .form-group input,
+form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+form .form-group button {
+    background-color: #e60023;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form .form-group button:hover {
+    background-color: #c0001e;
+}
